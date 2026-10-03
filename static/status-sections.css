@@ -1,0 +1,24 @@
+.trade-status-section{margin:20px 18px;border:1px solid #b8c8b0;border-radius:12px;overflow:hidden;background:#f8faf5}
+.trade-status-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:18px 20px;background:#e7efe0;border-bottom:1px solid #b8c8b0}
+.trade-status-heading h3{margin:0;font-size:16px;color:#245a45}
+.trade-status-heading span{font-size:12px;color:#687568}
+.status-closed{background:#fafafa;border-color:#cdd3d6}.status-closed>.trade-status-heading{background:#edf0f2;border-color:#cdd3d6}.status-closed>.trade-status-heading h3{color:#40515c}
+.status-pending{border-color:#dcc69a}.status-pending>.trade-status-heading{background:#fbf3df;border-color:#dcc69a}.status-pending>.trade-status-heading h3{color:#806021}
+@media(max-width:720px){.trade-status-section{margin:14px 8px}.trade-status-section>.cycle-card{margin:12px 8px}}
+details.trade-status-section>summary{cursor:pointer;list-style:none}
+details.trade-status-section>summary:before{content:'▶';font-size:12px;color:#40515c}
+details.trade-status-section[open]>summary:before{content:'▼'}
+details.trade-status-section>summary h3{flex:1}
+#executionCards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));gap:10px;max-height:560px;overflow:auto;padding:8px 4px;align-items:start}
+#executionCards .lifecycle-box{margin:0;padding:8px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:6px}
+#executionCards .lifecycle-box>legend{font-size:11px;padding:0 5px}
+#executionCards .execution-card{margin:0;padding:8px;font-size:11px;min-width:0;overflow-wrap:anywhere}
+#executionCards .execution-card small{font-size:10px;line-height:1.5}
+#executionCards .execution-role{font-size:11px;margin-bottom:4px}
+#executionCards .execution-card button{font-size:10px;padding:5px 7px;margin:6px 4px 0 0}
+#executionCards .closed-executions{grid-column:1/-1;margin:0;border-top:1px solid #ccd5c7;padding:10px 0}
+.closed-executions>summary{cursor:pointer;font-size:12px;color:#56665d;padding:6px}
+.closed-execution-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));gap:10px;padding-top:10px}
+.ticker-filter .classified-toggle{display:flex;flex:0 0 auto;align-items:center;gap:7px;min-width:0;padding-bottom:10px;font-size:12px;cursor:pointer}
+.classified-toggle input{width:16px;height:16px;margin:0;accent-color:#36705b}
+#rows tr[hidden]{display:none}
